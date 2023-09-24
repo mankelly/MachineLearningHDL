@@ -7,3 +7,5 @@ $e^x \approx 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + \frac{x^4}{4!} + \ldots =
 
 To create this function in SystemVerilog, I "simulated" how it would work by first writting it in python. Essentially, the logic data path/algorithm will perform similar to the python script. I created parameters to change the amount of iterations of the expansion as well as the data width of the function.
 As noted, this was planned to be used for sigmoid approximation, but became too complex as I would have to implement fixed point division, meaning a lot of latency through the data path. This implementation may be explored again in future research.
+
+Note: Since I plan to use this function in the range of $\(-1 \leq x \leq 1)\$, I calculate a fairly low percent error at 7E-5%
