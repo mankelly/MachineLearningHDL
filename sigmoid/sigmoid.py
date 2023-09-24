@@ -16,8 +16,8 @@ def sigmoid(x: (float)) -> float:
         sum = 0
     elif (x > -5.5) and (x <= -1.5):
         sum = 0.571859 + (0.392773*x) + (0.108706 * (x**2)) + (0.014222 * (x**3)) + (0.000734 * (x**4))
-    elif (x > -1.5) and (x < 1.5):
-        sum = (1/2) + (x/4) - ((x**3)/48) + ((x**5)/480)
+    elif (x > -1.5) and (x < 1.5): # Commented out the last 3 indexes because percent error barely changes after the 6th index
+        sum = (1/2) + (x/4) - ((x**3)/48) + ((x**5)/480) - ((x**7)/2688) + ((x**9)/10368) #- ((x**11)/ 248832) + ((x**13)/39739392) - ((x**15)/4479180)
     elif (x >= 1.5) and (x < 5.5):
         sum = 0.428141 + (0.392773*x) - (0.108706 * (x**2)) + (0.014222 * (x**3)) - (0.000734 * (x**4))
     else:
