@@ -1,4 +1,4 @@
-# Sigmoid Apporximation Function
+# Sigmoid Approximation Function
 ### Created in Python and SystemVerilog
 
 This is a sigmoid approximation function that will be used for Logistic Regression with fixed point math. The sigmoid taylor approximation in python was found in the [hyperlinked literature](https://www.researchgate.net/publication/281806053_An_application_of_multilayer_neural_network_on_hepatitis_disease_diagnosis_using_approximations_of_sigmoid_activation_function#pf5), which tests this approxiation.
